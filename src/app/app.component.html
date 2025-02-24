@@ -1,0 +1,13 @@
+
+
+  <div class="center-container">
+    <button class="button" (click)="getData()">click me </button>
+    <input type="text" placeholder="Search" (input)="search($event)"> 
+  </div>
+
+  <h1> Todo list </h1>
+  <ul> 
+    <li *ngFor="let todo of displayItem; let i = index">
+      {{i+1}} --> {{todo.title}}
+  </ul>
+
